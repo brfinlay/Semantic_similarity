@@ -957,3 +957,65 @@ assigned_syns = [syn_airplane, syn_ambulance, syn_angel, syn_ant, syn_anvil, syn
 
 
 ## Get Semantic Similarity Scores ##
+# 1st: Leacock_Chordorow
+
+def get_lch_similarity(list):
+    pairs = {}
+    for word1 in list:
+        for word2 in list:
+            l = word1.lch_similarity(word2)
+            pairs.update({(word1, word2): l})
+    return pairs
+
+lch = get_lch_similarity(assigned_syns)
+
+# Save pairs
+import pandas as pd
+df = pd.DataFrame()
+df['Pairs'] = list(lch.keys())
+df['LCH Score'] = list(lch.values())
+df.to_csv('/Users/brendafinlay/Documents/Cusack_Lab/lch_similarity_scores.csv', index=False)
+
+# Make and save matrix
+import numpy as np
+ob = len(assigned_syns)
+rdm = np.zeros([ob, ob])
+for ind1, o1 in enumerate(assigned_syns):
+    for ind2, o2 in enumerate(assigned_syns):
+        rdm[ind1, ind2] = lch[(o1, o2)]
+pd.DataFrame(rdm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/lch_rsm.csv', index=(master_list))
+
+# Make heatmap
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv('/Users/brendafinlay/Documents/lch_rsm.csv', index_col=0)
+fig,ax = plt.subplots(figsize=(7,7))
+sns.heatmap(df, center=0.05, ax=ax)
+#plt.show()
+plt.savefig('/Users/brendafinlay/Documents/heatmap_lch.pdf')
+plt.close()
+
+animate = [syn_angel, syn_ant, syn_bear, syn_bee, syn_bird, syn_butterfly, syn_camel, syn_cow, syn_crab, syn_crocodile, syn_dog, syn_dolphin, syn_dragon, syn_duck, syn_elephant, syn_cat, syn_campfire, syn_face, syn_fish, syn_flamingo, syn_frog, syn_giraffe, syn_hedgehog, syn_horse, syn_hurricane, syn_kangaroo, syn_lightning, syn_lion, syn_lobster, syn_mermaid, syn_monkey, syn_mosquito, syn_mouse, syn_ocean, syn_arm, syn_ear, syn_elbow, syn_eye, syn_leg, syn_nose, syn_mouth, syn_octopus, syn_owl, syn_panda, syn_parrot, syn_penguin, syn_pig, syn_rabbit, syn_raccoon, syn_rain, syn_rhinoceros, syn_river, syn_scorpion, syn_shark, syn_sheep, syn_snail, syn_snake, syn_spider, syn_squirrel, syn_star, syn_swan, syn_tiger, syn_toe, syn_tornado, syn_zebra, syn_windmill]
+inab = [syn_airplane, syn_ambulance, syn_anvil, syn_axe, syn_barn, syn_bathtub, syn_bed, syn_bench, syn_bicycle, syn_bridge, syn_bulldozer, syn_bus, syn_bush, syn_cactus, syn_cannon, syn_canoe, syn_car, syn_castle, syn_cello, syn_chair, syn_chandelier, syn_church, syn_cloud, syn_computer, syn_couch, syn_dishwasher, syn_door, syn_dresser, syn_fence, syn_fireplace, syn_garden, syn_helicopter, syn_hospital, syn_house, syn_jail, syn_ladder, syn_laptop, syn_lighthouse, syn_mailbox, syn_microwave, syn_moon, syn_mountain, syn_oven, syn_parachute, syn_piano, syn_pond, syn_pool, syn_rainbow, syn_sailboat, syn_sink, syn_skyscraper, syn_snowman, syn_speedboat, syn_stairs, syn_stove, syn_streetlight, syn_submarine, syn_suitcase, syn_sun, syn_swing, syn_sword, syn_table, syn_television, syn_tent, syn_toilet, syn_tractor, syn_train, syn_tree, syn_truck, syn_van, syn_whale, syn_wheel]
+inaa = [syn_apple, syn_asparagus, syn_backpack, syn_banana, syn_bandage, syn_baseball, syn_basket, syn_basketball, syn_bat, syn_belt, syn_binoculars, syn_blackberry, syn_blueberry, syn_book, syn_boomerang, syn_bowtie, syn_bracelet, syn_brain, syn_bread, syn_broccoli, syn_broom, syn_bucket, syn_cake, syn_calculator, syn_calendar, syn_camera, syn_candle, syn_carrot, syn_clarinet, syn_clock, syn_compass, syn_cookie, syn_cooler, syn_crayon, syn_crown, syn_cup, syn_diamond, syn_drill, syn_dumbbell, syn_envelope, syn_eraser, syn_eyeglasses, syn_fan, syn_feather, syn_finger, syn_flashlight, syn_flower, syn_foot, syn_fork, syn_goatee, syn_grass, syn_guitar, syn_hamburger, syn_hammer, syn_hand, syn_harp, syn_hat, syn_headphones, syn_helmet, syn_hourglass, syn_jacket, syn_key, syn_keyboard, syn_knee, syn_knife, syn_lantern, syn_leaf, syn_lighter, syn_lipstick, syn_lollipop, syn_map, syn_marker, syn_megaphone, syn_microphone, syn_motorbike, syn_moustache, syn_mug, syn_mushroom, syn_nail, syn_necklace, syn_onion, syn_paintbrush, syn_pants, syn_passport, syn_peanut, syn_pear, syn_pencil, syn_pillow, syn_pineapple, syn_pizza, syn_pliers, syn_popsicle, syn_postcard, syn_potato, syn_purse, syn_radio, syn_rake, syn_rifle, syn_sandwich, syn_saw, syn_saxophone, syn_scissors, syn_screwdriver, syn_shoe, syn_shorts, syn_shovel, syn_skateboard, syn_skull, syn_snorkel, syn_snowflake, syn_sock, syn_spoon, syn_spreadsheet, syn_steak, syn_stereo, syn_stethoscope, syn_strawberry, syn_sweater, syn_syringe, syn_teapot, syn_telephone, syn_toaster, syn_tooth, syn_toothbrush, syn_toothpaste, syn_trombone, syn_trumpet, syn_umbrella, syn_underwear, syn_vase, syn_violin, syn_watermelon, syn_wristwatch]
+konkle_combined = animate + inab + inaa
+
+konkle_lch = get_lch_similarity(konkle_combined)
+
+# Make and save matrix
+ob = len(konkle_combined)
+rsm = np.zeros([ob, ob])
+for ind1, o1 in enumerate(konkle_combined):
+    for ind2, o2 in enumerate(konkle_combined):
+        rsm[ind1, ind2] = konkle_lch[(o1, o2)]
+pd.DataFrame(rsm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/konkle_matrix.csv')
+
+
+# Konkle heatmap
+df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/konkle_matrix_headings.csv', index_col=0)
+fig,ax = plt.subplots(figsize=(7,7))
+sns.heatmap(df, center=0.05, ax=ax)
+plt.show()
+#plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_konkle_lch.pdf')
+plt.close()
