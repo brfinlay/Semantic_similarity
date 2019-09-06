@@ -1,0 +1,32 @@
+
+## Wu-Palmer Similarity for >=80% semantic similarity ##
+# syn_variable1.wup_similarity(syn_variable2)
+
+def high_scorers(list):
+    score = {}
+    for word1 in list:
+        for word2 in list:
+            s = word1.wup_similarity(word2)
+            if s >= 0.8:
+                score.update({(word1, word2): s})
+    return score
+hs = high_scorers(konkle_combined)
+
+print(hs.keys())
+
+# WUP high scoring matrix
+df = pd.DataFrame()
+df['WUP Pairs'] = list(hs.keys())
+df['Score'] = list(hs.values())
+df.to_csv('/Users/brendafinlay/Documents/Cusack_Lab/wup_highscorers.csv', index=False)
+
+
+# WUP High heatmap
+df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/wup_highscorers.csv', index_col=0)
+fig,ax = plt.subplots(figsize=(7,7))
+sns.heatmap(df, center=0.05, ax=ax, xticklabels=True, yticklabels=True)
+sns.set(font_scale= 0.25)
+#plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_highscore_wup.pdf')
+plt.show()
+plt.close()
+
