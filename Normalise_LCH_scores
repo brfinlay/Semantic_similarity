@@ -1,0 +1,12 @@
+## Normalise scores so that perfect similarity = 1
+def normalise(dict):
+    normalised = {}
+    for keys in dict:
+        normalised.update({keys: None})
+        for values in dict:
+            n = int(values)/3.63758616
+            normalised.replace({None, n})
+    return normalised
+normalise(scores)
+
+              #FAILED#
