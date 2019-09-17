@@ -255,7 +255,7 @@ syn_suitcase = wn.synset('bag.n.06')
 syn_sun = wn.synset('sun.n.01')
 syn_swan = wn.synset('swan.n.01')
 syn_sweater = wn.synset('sweater.n.01')
-syn_swing = wn.synset('swing.n.02')
+#syn_swing = wn.synset('swing.n.02')
 syn_sword = wn.synset('sword.n.01')
 syn_syringe = wn.synset('syringe.n.01')
 syn_table = wn.synset('table.n.02')
@@ -299,21 +299,21 @@ def get_lch_similarity(list):
     return pairs
 
 
-### ### Konkle Categorised Object List ### ####
-animate = [syn_angel, syn_ant, syn_bear, syn_bee, syn_bird, syn_butterfly, syn_camel, syn_cow, syn_crab, syn_crocodile, syn_dog, syn_dolphin, syn_dragon, syn_duck, syn_elephant, syn_cat, syn_campfire, syn_face, syn_fish, syn_flamingo, syn_frog, syn_giraffe, syn_hedgehog, syn_horse, syn_hurricane, syn_kangaroo, syn_lightning, syn_lion, syn_lobster, syn_mermaid, syn_monkey, syn_mosquito, syn_mouse, syn_ocean, syn_arm, syn_ear, syn_elbow, syn_eye, syn_leg, syn_nose, syn_mouth, syn_octopus, syn_owl, syn_panda, syn_parrot, syn_penguin, syn_pig, syn_rabbit, syn_raccoon, syn_rain, syn_rhinoceros, syn_river, syn_scorpion, syn_shark, syn_sheep, syn_snail, syn_snake, syn_spider, syn_squirrel, syn_star, syn_swan, syn_tiger, syn_toe, syn_tornado, syn_zebra, syn_windmill]
-inab = [syn_airplane, syn_ambulance, syn_anvil, syn_axe, syn_barn, syn_bathtub, syn_bed, syn_bench, syn_bicycle, syn_bridge, syn_bulldozer, syn_bus, syn_bush, syn_cactus, syn_cannon, syn_canoe, syn_car, syn_castle, syn_cello, syn_chair, syn_chandelier, syn_church, syn_cloud, syn_computer, syn_couch, syn_dishwasher, syn_door, syn_dresser, syn_fence, syn_fireplace, syn_garden, syn_helicopter, syn_hospital, syn_house, syn_jail, syn_ladder, syn_laptop, syn_lighthouse, syn_mailbox, syn_microwave, syn_moon, syn_mountain, syn_oven, syn_parachute, syn_piano, syn_pond, syn_pool, syn_rainbow, syn_sailboat, syn_sink, syn_skyscraper, syn_snowman, syn_speedboat, syn_stairs, syn_stove, syn_streetlight, syn_submarine, syn_suitcase, syn_sun, syn_swing, syn_sword, syn_table, syn_television, syn_tent, syn_toilet, syn_tractor, syn_train, syn_tree, syn_truck, syn_van, syn_whale, syn_wheel]
-inas = [syn_apple, syn_asparagus, syn_backpack, syn_banana, syn_bandage, syn_baseball, syn_basket, syn_basketball, syn_bat, syn_belt, syn_binoculars, syn_blackberry, syn_blueberry, syn_book, syn_boomerang, syn_bowtie, syn_bracelet, syn_brain, syn_bread, syn_broccoli, syn_broom, syn_bucket, syn_cake, syn_calculator, syn_calendar, syn_camera, syn_candle, syn_carrot, syn_clarinet, syn_clock, syn_compass, syn_cookie, syn_cooler, syn_crayon, syn_crown, syn_cup, syn_diamond, syn_drill, syn_dumbbell, syn_envelope, syn_eraser, syn_eyeglasses, syn_fan, syn_feather, syn_finger, syn_flashlight, syn_flower, syn_foot, syn_fork, syn_goatee, syn_grass, syn_guitar, syn_hamburger, syn_hammer, syn_hand, syn_harp, syn_hat, syn_headphones, syn_helmet, syn_hourglass, syn_jacket, syn_key, syn_keyboard, syn_knee, syn_knife, syn_lantern, syn_leaf, syn_lighter, syn_lipstick, syn_lollipop, syn_map, syn_marker, syn_megaphone, syn_microphone, syn_motorbike, syn_moustache, syn_mug, syn_mushroom, syn_nail, syn_necklace, syn_onion, syn_paintbrush, syn_pants, syn_passport, syn_peanut, syn_pear, syn_pencil, syn_pillow, syn_pineapple, syn_pizza, syn_pliers, syn_popsicle, syn_postcard, syn_potato, syn_purse, syn_radio, syn_rake, syn_rifle, syn_sandwich, syn_saw, syn_saxophone, syn_scissors, syn_screwdriver, syn_shoe, syn_shorts, syn_shovel, syn_skateboard, syn_skull, syn_snorkel, syn_snowflake, syn_sock, syn_spoon, syn_spreadsheet, syn_steak, syn_stereo, syn_stethoscope, syn_strawberry, syn_sweater, syn_syringe, syn_teapot, syn_telephone, syn_toaster, syn_tooth, syn_toothbrush, syn_toothpaste, syn_trombone, syn_trumpet, syn_umbrella, syn_underwear, syn_vase, syn_violin, syn_watermelon, syn_wristwatch]
+### ### Konkle Categorised Object List in order of AOA (low to high) ### ####
+animate = [syn_dog, syn_nose, syn_leg, syn_toe, syn_arm, syn_spider, syn_duck, syn_bird, syn_bear, syn_mouth, syn_rain, syn_ear, syn_butterfly, syn_cat, syn_face, syn_eye, syn_pig, syn_star, syn_cow, syn_rabbit, syn_angel, syn_tiger, syn_fish, syn_horse, syn_monkey, syn_sheep, syn_ant, syn_frog, syn_lion, syn_squirrel, syn_ocean, syn_lightning, syn_elbow, syn_zebra, syn_elephant, syn_bat, syn_river, syn_mouse, syn_bee, syn_giraffe, syn_snake, syn_camel, syn_crocodile, syn_campfire, syn_crab, syn_windmill, syn_shark, syn_kangaroo, syn_dragon, syn_parrot, syn_panda, syn_mermaid, syn_penguin, syn_snail, syn_rhinoceros, syn_dolphin, syn_mosquito, syn_owl, syn_tornado, syn_octopus, syn_flamingo, syn_swan, syn_raccoon, syn_hurricane, syn_lobster, syn_scorpion, syn_hedgehog]
+inab = [syn_bed, syn_door, syn_house, syn_bathtub, syn_car, syn_sun, syn_chair, syn_snowman, syn_toilet, syn_tree, syn_cloud, syn_couch, syn_truck, syn_bus, syn_airplane, syn_train, syn_television, syn_bench, syn_stairs, syn_bicycle, syn_rainbow, syn_dresser, syn_stove, syn_table, syn_ladder, syn_wheel, syn_sink, syn_barn, syn_sailboat, syn_moon, syn_bush, syn_church, syn_pool, syn_pond, syn_tent, syn_van, syn_helicopter, syn_garden, syn_sword, syn_whale, syn_piano, syn_tractor, syn_hospital, syn_bridge, syn_bulldozer, syn_oven, syn_jail, syn_castle, syn_streetlight, syn_axe, syn_lighthouse, syn_mailbox, syn_mountain, syn_ambulance, syn_fence, syn_speedboat, syn_canoe, syn_cactus, syn_parachute, syn_dishwasher, syn_fireplace, syn_microwave, syn_cannon, syn_submarine, syn_suitcase, syn_skyscraper, syn_chandelier, syn_computer, syn_cello, syn_anvil, syn_laptop]
+inas = [syn_spoon, syn_shoe, syn_carrot, syn_hand, syn_sock, syn_flower, syn_crayon, syn_pants, syn_cake, syn_hat, syn_toothpaste, syn_cookie, syn_finger, syn_foot, syn_pillow, syn_cup, syn_bread, syn_key, syn_tooth, syn_fork, syn_book, syn_banana, syn_popsicle, syn_lollipop, syn_grass, syn_underwear, syn_jacket, syn_shorts, syn_pear, syn_pencil, syn_apple, syn_knife, syn_strawberry, syn_watermelon, syn_toothbrush, syn_clock, syn_scissors, syn_leaf, syn_belt, syn_telephone, syn_feather, syn_pizza, syn_sandwich, syn_baseball, syn_potato, syn_marker, syn_eyeglasses, syn_eraser, syn_necklace, syn_peanut, syn_mug, syn_radio, syn_broccoli, syn_hamburger, syn_sweater, syn_basketball, syn_guitar, syn_rake, syn_snowflake, syn_saw, syn_candle, syn_backpack, syn_moustache, syn_hammer, syn_lipstick, syn_nail, syn_broom, syn_purse, syn_map, syn_bucket, syn_flashlight, syn_fan, syn_basket, syn_bracelet, syn_umbrella, syn_helmet, syn_brain, syn_calendar, syn_bandage, syn_stereo, syn_camera, syn_screwdriver, syn_onion, syn_cooler, syn_blueberry, syn_paintbrush, syn_teapot, syn_envelope, syn_microphone, syn_pineapple, syn_shovel, syn_trumpet, syn_skull, syn_mushroom, syn_diamond, syn_steak, syn_toaster, syn_postcard, syn_asparagus, syn_binoculars, syn_skateboard, syn_pliers, syn_lighter, syn_drill, syn_wristwatch, syn_violin, syn_harp, syn_dumbbell, syn_headphones, syn_crown, syn_trombone, syn_rifle, syn_vase, syn_bowtie, syn_motorbike, syn_calculator, syn_compass, syn_stethoscope, syn_lantern, syn_hourglass, syn_blackberry, syn_saxophone, syn_snorkel, syn_clarinet, syn_keyboard, syn_knee, syn_boomerang, syn_megaphone, syn_syringe, syn_goatee, syn_passport, syn_spreadsheet]
 konkle_combined = animate + inab + inas
 
 scores = get_lch_similarity(konkle_combined)
 
 # Saved to matrix CSV
-#ob = len(konkle_combined)
-#rdm = np.zeros([ob, ob])
-#for ind1, o1 in enumerate(konkle_combined):
- #   for ind2, o2 in enumerate(konkle_combined):
-  #      rdm[ind1, ind2] = scores[(o1, o2)]
-#pd.DataFrame(rdm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/konkle_matrix.csv', index=konkle_combined)
+ob = len(konkle_combined)
+rdm = np.zeros([ob, ob])
+for ind1, o1 in enumerate(konkle_combined):
+    for ind2, o2 in enumerate(konkle_combined):
+        rdm[ind1, ind2] = scores[(o1, o2)]
+pd.DataFrame(rdm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/ordered_matrix_272.csv', index=konkle_combined)
 
 # Interactive Heatmap #
 import chart_studio.plotly as csply
@@ -321,12 +321,11 @@ import plotly.graph_objects as go
 from plotly.offline import iplot
 import plotly.figure_factory as ff
 import plotly.io as pio
-pio.renderers
 pio.renderers.default = "chrome"
 import psutil
 import numpy as py
 
-df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/konkle_matrix_headings.csv', index_col=0)
+df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/ordered_konklematrix_272_headings.csv', index_col=0)
 # Normalise data so that perfect similarity=1 (Corrected to 4 decimal places)
 z = py.around(df.values/3.63758616, 6)
 figure = ff.create_annotated_heatmap(z=z, x=list(df.columns), y=list(df.index), annotation_text=None, showscale=True)
