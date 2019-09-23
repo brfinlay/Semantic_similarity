@@ -16,5 +16,11 @@ Assign a variable to the synset, and:
 
 variable.definition()
   
+-----------------------------------------------------------------------------------------------
+Leacock-Chodorow (LCH) similarity was used as a measure of semantic similarity.
+To get LCH similarity fo two words:
+syn1.lch_similarity(syn2)
+where syn(x) denotes the synset for a particular word(x)
+
 
   
