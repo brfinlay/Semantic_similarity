@@ -1,14 +1,16 @@
                               
                                              **Summary of Each Script**
-1. master_similarity_score.py
+**1. master_similarity_score.py**
      
      *Messy starting point script containing all processes. The other scripts are cleaner snippets of what this does*
 
-2. master_definitions&synsets.py
+
+**2. master_definitions&synsets.py**
       
       *Takes word list (n = 273) gets their synset definitions, and assigns an appropriate synset to each word. See Google Drive for a spreadsheet of all the synsets, corresponding definitions, and final synsets chosen.*
 
-3. heatmap_pdf
+
+**3. heatmap_pdf**
       
       *Assigns variables to the correct synsets determined in* 'master_definitions&synsets.py'.
       
@@ -22,7 +24,8 @@
       
       https://drive.google.com/drive/folders/1ivPSicHmdq38gUWnVMo9msDP8p9N4Xwc
 
-4. interactive_heatmap.py
+
+**4. interactive_heatmap.py**
       
       *Assigns synsets to variable similar to* (3)
       
@@ -38,9 +41,11 @@
       
       https://drive.google.com/drive/folders/1ivPSicHmdq38gUWnVMo9msDP8p9N4Xwc
        
+       
 5. WUP_similarity folder
       
       *NOT RELVANT TO THIS PROJECT*
+      
       
 6. Normalise_LCH_Scores
       
