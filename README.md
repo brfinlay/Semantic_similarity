@@ -10,7 +10,7 @@
    *- Takes word list (n = 273) gets their synset definitions, and assigns an appropriate synset to each word. See Google Drive for a spreadsheet of all the synsets, corresponding definitions, and final synsets chosen.*
 
 
-**3. heatmap_pdf**
+**3. heatmap_pdf.py**
       
    *- Assigns variables to the correct synsets determined in* 'master_definitions&synsets.py'.
       
