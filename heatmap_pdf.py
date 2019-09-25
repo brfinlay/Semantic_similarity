@@ -290,9 +290,9 @@ syn_zebra = wn.synset('zebra.n.01')
 
 
 ############# Konkle Categorised Object List ordered by AOA (low to high) ################
-animate = [syn_dog, syn_nose, syn_leg, syn_toe, syn_arm, syn_spider, syn_duck, syn_bird, syn_bear, syn_mouth, syn_rain, syn_ear, syn_butterfly, syn_cat, syn_face, syn_eye, syn_pig, syn_star, syn_cow, syn_rabbit, syn_angel, syn_tiger, syn_fish, syn_horse, syn_monkey, syn_sheep, syn_ant, syn_frog, syn_lion, syn_squirrel, syn_ocean, syn_lightning, syn_elbow, syn_zebra, syn_elephant, syn_bat, syn_river, syn_mouse, syn_bee, syn_giraffe, syn_snake, syn_camel, syn_crocodile, syn_campfire, syn_crab, syn_windmill, syn_shark, syn_kangaroo, syn_dragon, syn_parrot, syn_panda, syn_mermaid, syn_penguin, syn_snail, syn_rhinoceros, syn_dolphin, syn_mosquito, syn_owl, syn_tornado, syn_octopus, syn_flamingo, syn_swan, syn_raccoon, syn_hurricane, syn_lobster, syn_scorpion, syn_hedgehog]
+animate = [syn_hand, syn_dog, syn_nose, syn_leg, syn_toe, syn_arm, syn_spider, syn_finger, syn_foot, syn_duck, syn_bird, syn_bear, syn_mouth, syn_rain, syn_ear, syn_butterfly, syn_cat, syn_face, syn_eye, syn_pig, syn_star, syn_cow, syn_rabbit, syn_angel, syn_tiger, syn_fish, syn_horse, syn_monkey, syn_sheep, syn_ant, syn_frog, syn_lion, syn_squirrel, syn_ocean, syn_lightning, syn_elbow, syn_zebra, syn_elephant, syn_bat, syn_river, syn_mouse, syn_bee, syn_giraffe, syn_snake, syn_camel, syn_crocodile, syn_campfire, syn_crab, syn_windmill, syn_shark, syn_kangaroo, syn_dragon, syn_parrot, syn_panda, syn_mermaid, syn_penguin, syn_snail, syn_rhinoceros, syn_dolphin, syn_mosquito, syn_owl, syn_tornado, syn_octopus, syn_flamingo, syn_swan, syn_raccoon, syn_hurricane, syn_lobster, syn_scorpion, syn_hedgehog, syn_knee]
 inab = [syn_bed, syn_door, syn_house, syn_bathtub, syn_car, syn_sun, syn_chair, syn_snowman, syn_toilet, syn_tree, syn_cloud, syn_couch, syn_truck, syn_bus, syn_airplane, syn_train, syn_television, syn_bench, syn_stairs, syn_bicycle, syn_rainbow, syn_dresser, syn_stove, syn_table, syn_ladder, syn_wheel, syn_sink, syn_barn, syn_sailboat, syn_beach, syn_moon, syn_bush, syn_church, syn_pool, syn_pond, syn_tent, syn_van, syn_helicopter, syn_garden, syn_sword, syn_whale, syn_piano, syn_tractor, syn_hospital, syn_bridge, syn_bulldozer, syn_oven, syn_jail, syn_castle, syn_streetlight, syn_axe, syn_lighthouse, syn_mailbox, syn_mountain, syn_ambulance, syn_fence, syn_speedboat, syn_canoe, syn_cactus, syn_parachute, syn_dishwasher, syn_fireplace, syn_microwave, syn_cannon, syn_submarine, syn_suitcase, syn_skyscraper, syn_chandelier, syn_computer, syn_cello, syn_anvil, syn_laptop]
-inas = [syn_spoon, syn_shoe, syn_carrot, syn_hand, syn_sock, syn_flower, syn_crayon, syn_pants, syn_cake, syn_hat, syn_toothpaste, syn_cookie, syn_finger, syn_foot, syn_pillow, syn_cup, syn_bread, syn_key, syn_tooth, syn_fork, syn_book, syn_banana, syn_popsicle, syn_lollipop, syn_grass, syn_underwear, syn_jacket, syn_shorts, syn_pear, syn_pencil, syn_apple, syn_knife, syn_strawberry, syn_watermelon, syn_toothbrush, syn_clock, syn_scissors, syn_leaf, syn_belt, syn_telephone, syn_feather, syn_pizza, syn_sandwich, syn_baseball, syn_potato, syn_beard, syn_marker, syn_eyeglasses, syn_eraser, syn_necklace, syn_peanut, syn_mug, syn_radio, syn_broccoli, syn_hamburger, syn_sweater, syn_basketball, syn_guitar, syn_rake, syn_snowflake, syn_saw, syn_candle, syn_backpack, syn_moustache, syn_hammer, syn_lipstick, syn_nail, syn_broom, syn_purse, syn_map, syn_bucket, syn_flashlight, syn_fan, syn_basket, syn_bracelet, syn_umbrella, syn_helmet, syn_brain, syn_calendar, syn_bandage, syn_stereo, syn_camera, syn_screwdriver, syn_onion, syn_cooler, syn_blueberry, syn_paintbrush, syn_teapot, syn_envelope, syn_microphone, syn_pineapple, syn_shovel, syn_trumpet, syn_skull, syn_mushroom, syn_diamond, syn_steak, syn_toaster, syn_postcard, syn_asparagus, syn_binoculars, syn_skateboard, syn_pliers, syn_lighter, syn_drill, syn_wristwatch, syn_violin, syn_harp, syn_dumbbell, syn_headphones, syn_crown, syn_trombone, syn_rifle, syn_vase, syn_bowtie, syn_motorbike, syn_calculator, syn_compass, syn_stethoscope, syn_lantern, syn_hourglass, syn_blackberry, syn_saxophone, syn_snorkel, syn_clarinet, syn_keyboard, syn_knee, syn_boomerang, syn_megaphone, syn_syringe, syn_goatee, syn_passport, syn_spreadsheet]
+inas = [syn_spoon, syn_shoe, syn_carrot, syn_sock, syn_flower, syn_crayon, syn_pants, syn_cake, syn_hat, syn_toothpaste, syn_cookie, syn_pillow, syn_cup, syn_bread, syn_key, syn_tooth, syn_fork, syn_book, syn_banana, syn_popsicle, syn_lollipop, syn_grass, syn_underwear, syn_jacket, syn_shorts, syn_pear, syn_pencil, syn_apple, syn_knife, syn_strawberry, syn_watermelon, syn_toothbrush, syn_clock, syn_scissors, syn_leaf, syn_belt, syn_telephone, syn_feather, syn_pizza, syn_sandwich, syn_baseball, syn_potato, syn_marker, syn_eyeglasses, syn_eraser, syn_necklace, syn_peanut, syn_mug, syn_radio, syn_broccoli, syn_hamburger, syn_sweater, syn_basketball, syn_guitar, syn_rake, syn_snowflake, syn_saw, syn_candle, syn_backpack, syn_moustache, syn_hammer, syn_lipstick, syn_nail, syn_broom, syn_purse, syn_map, syn_bucket, syn_flashlight, syn_fan, syn_basket, syn_bracelet, syn_umbrella, syn_helmet, syn_brain, syn_calendar, syn_bandage, syn_stereo, syn_camera, syn_screwdriver, syn_onion, syn_cooler, syn_blueberry, syn_paintbrush, syn_teapot, syn_envelope, syn_microphone, syn_pineapple, syn_shovel, syn_trumpet, syn_skull, syn_mushroom, syn_diamond, syn_steak, syn_toaster, syn_postcard, syn_asparagus, syn_binoculars, syn_skateboard, syn_pliers, syn_lighter, syn_drill, syn_wristwatch, syn_violin, syn_harp, syn_dumbbell, syn_headphones, syn_crown, syn_trombone, syn_rifle, syn_vase, syn_bowtie, syn_motorbike, syn_calculator, syn_compass, syn_stethoscope, syn_lantern, syn_hourglass, syn_blackberry, syn_saxophone, syn_snorkel, syn_clarinet, syn_keyboard, syn_boomerang, syn_megaphone, syn_syringe, syn_goatee, syn_passport, syn_spreadsheet]
 konkle_combined = animate + inab + inas
 
 ## Leacock-Chordorow Similarity Score ##
@@ -310,9 +310,11 @@ scores = get_lch_similarity(konkle_combined)
 # Konkle categorized, ordered by AOA Seaborn heatmap.pdf
 df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/ordered_konklematrix_272_headings.csv', index_col=0)
 fig,ax = plt.subplots(figsize=(15,15))
-sns.heatmap(df/3.63758616, center=0.05, ax=ax, xticklabels=True, yticklabels=True)
+# To create contrasting colours for high and low scores, keeping centre light i.e. diverging colour palette. Saved as category&ordered_r.pdf
+cmap = sns.diverging_palette(240, 10, n=9, as_cmap=True)
+sns.heatmap(df, center=1.5, ax=ax, xticklabels=True, yticklabels=True, cmap=cmap)
 sns.set(font_scale= 0.25)
-plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_konkle&ordered.pdf')
+plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_konkle&ordered_r.pdf')
 plt.close()
 
 ################# Huth Categorised - Ordered by AOA low to high ######################
@@ -355,9 +357,10 @@ pd.DataFrame(rdm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_bio.csv',
 ## Must close rsm_headings file before running heatmap script
 df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_bio_headings.csv', index_col=0)
 fig,ax = plt.subplots(figsize=(15,15))
-sns.heatmap(df/3.63758616, center=0.05, ax=ax, xticklabels=True, yticklabels=True)
+cmap = sns.diverging_palette(240, 10, n=9, as_cmap=True)
+sns.heatmap(df, center=1.5, ax=ax, xticklabels=True, yticklabels=True, cmap=cmap)
 sns.set(font_scale= 0.25)
-plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_HuthBio&ordered.pdf')
+plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_HuthBio&ordered_r.pdf')
 plt.close()
 
 # # 2. Nature vs Civilisation
@@ -376,9 +379,10 @@ pd.DataFrame(rdm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_natciv.cs
 # Seaborn heatmap Nature/Civilisation
 df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_natciv_headings.csv', index_col=0)
 fig,ax = plt.subplots(figsize=(15,15))
-sns.heatmap(df/3.63758616, center=0.05, ax=ax, xticklabels=True, yticklabels=True)
+cmap = sns.diverging_palette(240, 10, n=9, as_cmap=True)
+sns.heatmap(df, center=1.5, ax=ax, xticklabels=True, yticklabels=True, cmap=cmap)
 sns.set(font_scale= 0.5)
-plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_HuthNatCiv&ordered.pdf')
+plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_HuthNatCiv&ordered_r.pdf')
 plt.close()
 
 # # 3. Social vs Non-Social
@@ -396,9 +400,10 @@ pd.DataFrame(rdm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_socnon.cs
 # Seaborn map for Social/Non-Social
 df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_socnon_headings.csv', index_col=0)
 fig,ax = plt.subplots(figsize=(15,15))
-sns.heatmap(df/3.63758616, center=0.05, ax=ax, xticklabels=True, yticklabels=True)
+cmap = sns.diverging_palette(240, 10, n=9, as_cmap=True)
+sns.heatmap(df, center=1.5, ax=ax, xticklabels=True, yticklabels=True, cmap=cmap)
 sns.set(font_scale= 0.25)
-plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_HuthSocialNonS&ordered.pdf')
+plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_HuthSocialNonS&ordered_r.pdf')
 plt.close()
 
 ########### Faces, Scenes, Bodyparts (Downing&Peelin)(Kanwisher&Epstein) ################
@@ -421,7 +426,32 @@ pd.DataFrame(rdm).to_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_facescene
 # Seaborn heatmap
 df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_facescenebody_headings.csv', index_col=0)
 fig,ax = plt.subplots(figsize=(7,7))
-sns.heatmap(df/3.63758616, center=0.05, ax=ax, xticklabels=True, yticklabels=True)
+cmap = sns.diverging_palette(240, 10, n=9, as_cmap=True)
+sns.heatmap(df, center=1.5, ax=ax, xticklabels=True, yticklabels=True, cmap=cmap)
 sns.set(font_scale=0.4)
-plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_KanwisherDowning&ordered.pdf')
+plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_KanwisherDowning&ordered_r.pdf')
 plt.close()
+
+
+# How generic colour palette maps were made from normalised data. Note df/max, no cmap specification. Map saved as 'category&ordered.pdf' #
+
+#df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/rsm_facescenebody_headings.csv', index_col=0)
+#fig,ax = plt.subplots(figsize=(7,7))
+#sns.heatmap(df/3.63758616, center=0.05, ax=ax, xticklabels=True, yticklabels=True)
+#sns.set(font_scale=0.4)
+#plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_KanwisherDowning&ordered.pdf')
+#plt.close()
+
+
+
+# Script for how diverging palette pdfs were made: #
+# RSM data not normalised, saved as 'category&prdered_r.pdf'. _r denotes inverted palette.
+
+#df = pd.read_csv('/Users/brendafinlay/Documents/Cusack_Lab/ordered_konklematrix_272_headings.csv', index_col=0)
+#fig,ax = plt.subplots(figsize=(15,15))
+# To create contrasting colours for high and low scores, keeping centre light i.e. diverging colour palette. Saved as category&ordered_r.pdf
+#cmap = sns.diverging_palette(240, 10, n=9, as_cmap=True)
+#sns.heatmap(df, center=1.5, ax=ax, xticklabels=True, yticklabels=True, cmap=cmap)
+#sns.set(font_scale= 0.25)
+#plt.savefig('/Users/brendafinlay/Documents/Cusack_Lab/heatmap_konkle&ordered_r.pdf')
+#plt.close()
